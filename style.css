@@ -1,0 +1,115 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+ }
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to left, #f6cfbe, #b9dcf2);
+ }
+ .box{
+    position: relative;
+    width: 60vh;
+    height: 65vh;
+    border-radius: 30px;
+    background:#b9dcf2;
+    padding: 30px 35px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+   }
+   h2{
+    width: 100%;
+    font-weight: 900;
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    color: #335d77;
+    /*text-transform: uppercase;*/
+   }
+   input, button{
+    border: none;
+    outline: none;
+    background: none;
+   }
+   #inputBx{
+    position: relative;
+    width: 80%;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-style: italic;
+    background-color: #335d77;
+    margin-right: 10px;
+    color: #ffffff;
+    /*box-shadow: 5px 5px 7px rgba(34, 34, 34, 0.25);*/
+   }
+   #inputBx::placeholder{
+    color: #ffffff;
+   }
+   #addNewTask{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #335d77;
+    
+    font-weight: 900;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-bottom: 50px;
+   }
+   #addNewTask:hover{
+    opacity: 0.8;
+   }
+   #addNewTask:active{
+    opacity: 0.6;
+   }
+   .task-List{
+ 
+   }
+   #tasks{
+    display: flex;
+    justify-content: space-between;
+    background: #1f3a4b;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+   }
+   .text{
+    width: 100%;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+display: block;
+transition: 0.4s;
+   }
+   .text:not(:read-only){
+    color: rgb(255, 70, 70);
+   }
+.actions{
+display: flex;
+margin: 0 -0.2rem;
+gap: 10px;
+}
+.actions button{
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.actions button:hover{
+    opacity: 0.8;
+   }
+   .actions button:active{
+    opacity: 0.6;
+   }
+   .edit{
+    color: #b9dcf2;
+   }
+   .delete{
+    color: #fc9171;
+   }
