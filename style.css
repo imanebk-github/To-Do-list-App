@@ -12,21 +12,26 @@
     min-height: 100vh;
     background: linear-gradient(to left, #f6cfbe, #b9dcf2);
  }
- .box{
+ .container{
+   height: 85vh;
+   border-radius: 30px;
+   background:#b9dcf2;
+   padding: 30px 35px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ }
+ #box{
     position: relative;
     width: 60vh;
-    height: 65vh;
-    border-radius: 30px;
-    background:#b9dcf2;
-    padding: 30px 35px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: auto;
    }
    h2{
     width: 100%;
     font-weight: 900;
     text-align: center;
     font-size: 2.3rem;
-    margin-bottom: 20px;
+    margin-bottom: 46px;
+    margin-top: 10px;
+    margin-left: -10px;
     color: #335d77;
     /*text-transform: uppercase;*/
    }
@@ -50,6 +55,9 @@
    #inputBx::placeholder{
     color: #ffffff;
    }
+   #inputBx:hover{
+      box-shadow: rgba(6, 24, 62, 0.24) 0px 3px 8px;
+   }
    #addNewTask{
     background: transparent;
     border: none;
@@ -68,11 +76,12 @@
    #addNewTask:active{
     opacity: 0.6;
    }
-   .task-List{
+   #task-List{
  
    }
-   #tasks{
+   .tasks{
     display: flex;
+    color: #ffffff;
     justify-content: space-between;
     background: #1f3a4b;
     border-radius: 20px;
@@ -93,8 +102,11 @@ transition: 0.4s;
    }
 .actions{
 display: flex;
-margin: 0 -0.2rem;
+width: 50px;
+height: auto;
+margin: 0 0.8rem;
 gap: 10px;
+z-index: 10;
 }
 .actions button{
     font-size: 1.125rem;
@@ -108,8 +120,8 @@ gap: 10px;
     opacity: 0.6;
    }
    .edit{
-    color: #b9dcf2;
+    color: rgb(185, 220, 242);
    }
    .delete{
-    color: #fc9171;
+    color: rgb(252, 145, 113);
    }
